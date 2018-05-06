@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearlayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#655"
+    android:keepScreenOn="true"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/ll"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:textAlignment="center"
+        android:theme="@style/Platform.V11.AppCompat">
+
+        <ImageButton
+            android:id="@+id/backbutton"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="#baa"
+            android:hint="Back to Shopping List"
+            android:src="@drawable/backicon" />
+
+        <EditText
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight=".70"
+            android:enabled="true"
+            android:focusable="true"
+            android:hint="Add new grocery"
+            android:imeOptions="actionNext"
+            android:textSize="32dp"
+            android:inputType="textAutoComplete"
+            android:typeface="normal"
+            android:background="@color/blu"
+            />
+
+        <Button
+            android:id="@+id/confirm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:background="#0555ff"
+            android:gravity="right"
+            android:text="Confirm"
+            android:textColorHighlight="#1d1818"
+            android:theme="@style/AppTheme" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/android:list"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent" />
+
+</LinearLayout>
